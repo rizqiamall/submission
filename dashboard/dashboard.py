@@ -11,7 +11,7 @@ sns.set(style='whitegrid')
 st.title("🌍 Dashboard Analisis Kualitas Udara")
 
 # Load dataset
-df = pd.read_csv("/Users/rizqiamaliakartika/PYTHON/DICODING/Submission_mc219d5x1732/dashboard/PRSA_Data_Dingling_20130301-20170228.csv")
+df = pd.read_csv("dashboard/PRSA_Data_Dingling_20130301-20170228.csv")
 
 # Konversi kolom waktu jika belum bertipe datetime
 df['hour'] = pd.to_numeric(df['hour'], errors='coerce')
